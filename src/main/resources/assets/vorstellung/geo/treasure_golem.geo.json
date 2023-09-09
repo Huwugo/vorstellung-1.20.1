@@ -1,0 +1,143 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "treasure_golem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "treasure_golem",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-4, 3, -3], "size": [8, 5, 6], "uv": [0, 18]}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "treasure_golem",
+					"pivot": [-3, 0, 0]
+				},
+				{
+					"name": "leftL",
+					"parent": "legs",
+					"pivot": [3, 3, 0],
+					"cubes": [
+						{"origin": [2, 0, -1], "size": [2, 3, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "rightL",
+					"parent": "legs",
+					"pivot": [-3, 3, 0],
+					"cubes": [
+						{"origin": [-4, 0, -1], "size": [2, 3, 2], "uv": [0, 9]}
+					]
+				},
+				{
+					"name": "arms",
+					"parent": "treasure_golem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "rightA",
+					"parent": "arms",
+					"pivot": [-5, 6, 0],
+					"cubes": [
+						{"origin": [-6, 5, -1], "size": [2, 9, 2], "uv": [26, 43]}
+					]
+				},
+				{
+					"name": "leftA",
+					"parent": "arms",
+					"pivot": [5, 6, 0],
+					"cubes": [
+						{"origin": [4, 5, -1], "size": [2, 9, 2], "uv": [42, 30]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "treasure_golem",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "main",
+					"parent": "head",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 8, -1], "size": [6, 5, 3], "uv": [40, 0]}
+					]
+				},
+				{
+					"name": "eyes",
+					"parent": "head",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftE",
+					"parent": "eyes",
+					"pivot": [1, 10, -1],
+					"cubes": [
+						{"origin": [1, 10, -1.25], "size": [1, 1, 0.25], "uv": [62, 63]}
+					]
+				},
+				{
+					"name": "rightE",
+					"parent": "eyes",
+					"pivot": [-1, 10, -1],
+					"cubes": [
+						{"origin": [-2, 10, -1.25], "size": [1, 1, 0.25], "uv": [62, 63]}
+					]
+				},
+				{
+					"name": "chest",
+					"parent": "treasure_golem",
+					"pivot": [0, 14, 0]
+				},
+				{
+					"name": "top",
+					"parent": "chest",
+					"pivot": [0, 19, 4],
+					"cubes": [
+						{"origin": [-8, 20, -4], "size": [16, 1, 8], "uv": [0, 0]},
+						{"origin": [7, 19, -4], "size": [1, 1, 8], "uv": [10, 36]},
+						{"origin": [-8, 19, -4], "size": [1, 1, 8], "uv": [32, 34]},
+						{"origin": [-7, 19, -4], "size": [14, 1, 1], "uv": [0, 30]},
+						{"origin": [-7, 19, 3], "size": [14, 1, 1], "uv": [27, 28]},
+						{"origin": [-1, 18, -5], "size": [2, 2, 1], "uv": [0, 5]}
+					]
+				},
+				{
+					"name": "bottom",
+					"parent": "chest",
+					"pivot": [0, -9, 0],
+					"cubes": [
+						{"origin": [-8, 14, -4], "size": [16, 1, 8], "uv": [0, 9]},
+						{"origin": [-7, 15, -4], "size": [14, 4, 1], "uv": [28, 23]},
+						{"origin": [-7, 15, 3], "size": [14, 4, 1], "uv": [22, 18]},
+						{"origin": [7, 15, -4], "size": [1, 4, 8], "uv": [0, 32]},
+						{"origin": [-8, 15, -4], "size": [1, 4, 8], "uv": [22, 30]}
+					]
+				},
+				{
+					"name": "coins",
+					"parent": "chest",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-7, 15, -3], "size": [14, 3, 6], "uv": [20, 55]}
+					]
+				}
+			]
+		}
+	]
+}
