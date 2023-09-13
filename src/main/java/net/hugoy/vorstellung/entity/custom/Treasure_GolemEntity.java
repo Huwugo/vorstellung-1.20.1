@@ -2,8 +2,7 @@ package net.hugoy.vorstellung.entity.custom;
 
 import net.hugoy.vorstellung.entity.ModEntities;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.goal.LookAroundGoal;
-import net.minecraft.entity.ai.goal.WanderAroundFarGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.passive.AnimalEntity;
@@ -32,7 +31,7 @@ public class Treasure_GolemEntity extends AnimalEntity implements GeoEntity {
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(1, new WanderAroundFarGoal(this, 0.75f, 1));
+        this.goalSelector.add(1, new WanderAroundFarGoal(this, 0.75f, 3));
         this.goalSelector.add(2, new LookAroundGoal(this));
     }
 
